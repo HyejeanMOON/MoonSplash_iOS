@@ -49,6 +49,8 @@
 		08D6F06D25174516007198C0 /* ApiTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F06C25174516007198C0 /* ApiTask.swift */; };
 		08D6F07125174595007198C0 /* JsonDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F07025174595007198C0 /* JsonDecoder+Extension.swift */; };
 		08D6F07525174966007198C0 /* Looger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F07425174966007198C0 /* Looger.swift */; };
+		08D6F08125175051007198C0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F08025175051007198C0 /* Constant.swift */; };
+		08D6F08425176BAD007198C0 /* BasicError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F08325176BAD007198C0 /* BasicError.swift */; };
 		65425BC08D2E773DC15A01D3 /* Pods_MoonSplash_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDA8884D33EC9AABBDF312 /* Pods_MoonSplash_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,8 @@
 		08D6F06C25174516007198C0 /* ApiTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTask.swift; sourceTree = "<group>"; };
 		08D6F07025174595007198C0 /* JsonDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JsonDecoder+Extension.swift"; sourceTree = "<group>"; };
 		08D6F07425174966007198C0 /* Looger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Looger.swift; sourceTree = "<group>"; };
+		08D6F08025175051007198C0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		08D6F08325176BAD007198C0 /* BasicError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicError.swift; sourceTree = "<group>"; };
 		9BDE8C612E944B0AA7F6CACA /* Pods-MoonSplash_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonSplash_iOS.debug.xcconfig"; path = "Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CB05E15EC164F8D8289D76CF /* Pods-MoonSplash_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonSplash_iOS.release.xcconfig"; path = "Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CDFDA8884D33EC9AABBDF312 /* Pods_MoonSplash_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonSplash_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,6 +294,8 @@
 			children = (
 				08D6F07025174595007198C0 /* JsonDecoder+Extension.swift */,
 				08D6F07425174966007198C0 /* Looger.swift */,
+				08D6F08025175051007198C0 /* Constant.swift */,
+				08D6F08325176BAD007198C0 /* BasicError.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -455,6 +461,8 @@
 				08D6F01D2517218D007198C0 /* ViewsItem.swift in Sources */,
 				08D6F04725173B17007198C0 /* CurrentUserCollections.swift in Sources */,
 				08D6F00C25171FEF007198C0 /* DownloadsItem.swift in Sources */,
+				08D6F08425176BAD007198C0 /* BasicError.swift in Sources */,
+				08D6F08125175051007198C0 /* Constant.swift in Sources */,
 				08D6F05025173BB8007198C0 /* Statistics.swift in Sources */,
 				08D6F03225173851007198C0 /* ProfilImage.swift in Sources */,
 				08D6EFF425171AA4007198C0 /* UrlsItem.swift in Sources */,
