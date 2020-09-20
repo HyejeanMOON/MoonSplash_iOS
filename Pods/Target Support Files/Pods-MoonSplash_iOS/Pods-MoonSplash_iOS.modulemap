@@ -1,0 +1,6 @@
+framework module Pods_MoonSplash_iOS {
+  umbrella header "Pods-MoonSplash_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

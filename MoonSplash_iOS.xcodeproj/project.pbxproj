@@ -45,6 +45,7 @@
 		08D6F04D25173B94007198C0 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F04C25173B94007198C0 /* Views.swift */; };
 		08D6F05025173BB8007198C0 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F04F25173BB8007198C0 /* Statistics.swift */; };
 		08D6F05325173BE6007198C0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F05225173BE6007198C0 /* Photo.swift */; };
+		65425BC08D2E773DC15A01D3 /* Pods_MoonSplash_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDA8884D33EC9AABBDF312 /* Pods_MoonSplash_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,9 @@
 		08D6F04C25173B94007198C0 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		08D6F04F25173BB8007198C0 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		08D6F05225173BE6007198C0 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		9BDE8C612E944B0AA7F6CACA /* Pods-MoonSplash_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonSplash_iOS.debug.xcconfig"; path = "Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CB05E15EC164F8D8289D76CF /* Pods-MoonSplash_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonSplash_iOS.release.xcconfig"; path = "Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CDFDA8884D33EC9AABBDF312 /* Pods_MoonSplash_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonSplash_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65425BC08D2E773DC15A01D3 /* Pods_MoonSplash_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +111,8 @@
 			children = (
 				08D6EFD525171821007198C0 /* MoonSplash_iOS */,
 				08D6EFD425171821007198C0 /* Products */,
+				D2E165C76FF4FE55E3C118C3 /* Pods */,
+				606444F252079A2950706C93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +218,24 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		606444F252079A2950706C93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDA8884D33EC9AABBDF312 /* Pods_MoonSplash_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2E165C76FF4FE55E3C118C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BDE8C612E944B0AA7F6CACA /* Pods-MoonSplash_iOS.debug.xcconfig */,
+				CB05E15EC164F8D8289D76CF /* Pods-MoonSplash_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08D6EFE225171824007198C0 /* Build configuration list for PBXNativeTarget "MoonSplash_iOS" */;
 			buildPhases = (
+				D93430098677E1F8C14B1FBA /* [CP] Check Pods Manifest.lock */,
 				08D6EFCF25171820007198C0 /* Sources */,
 				08D6EFD025171820007198C0 /* Frameworks */,
 				08D6EFD125171820007198C0 /* Resources */,
+				8925863444C1F65CB154BAFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,6 +301,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8925863444C1F65CB154BAFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D93430098677E1F8C14B1FBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoonSplash_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08D6EFCF25171820007198C0 /* Sources */ = {
@@ -440,6 +509,7 @@
 		};
 		08D6EFE325171824007198C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDE8C612E944B0AA7F6CACA /* Pods-MoonSplash_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +532,7 @@
 		};
 		08D6EFE425171824007198C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB05E15EC164F8D8289D76CF /* Pods-MoonSplash_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
