@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,6 +45,10 @@
 		08D6F04D25173B94007198C0 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F04C25173B94007198C0 /* Views.swift */; };
 		08D6F05025173BB8007198C0 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F04F25173BB8007198C0 /* Statistics.swift */; };
 		08D6F05325173BE6007198C0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F05225173BE6007198C0 /* Photo.swift */; };
+		08D6F06925174508007198C0 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F06825174508007198C0 /* ApiManager.swift */; };
+		08D6F06D25174516007198C0 /* ApiTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F06C25174516007198C0 /* ApiTask.swift */; };
+		08D6F07125174595007198C0 /* JsonDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F07025174595007198C0 /* JsonDecoder+Extension.swift */; };
+		08D6F07525174966007198C0 /* Looger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F07425174966007198C0 /* Looger.swift */; };
 		65425BC08D2E773DC15A01D3 /* Pods_MoonSplash_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDA8884D33EC9AABBDF312 /* Pods_MoonSplash_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +93,10 @@
 		08D6F04C25173B94007198C0 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		08D6F04F25173BB8007198C0 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		08D6F05225173BE6007198C0 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		08D6F06825174508007198C0 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		08D6F06C25174516007198C0 /* ApiTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTask.swift; sourceTree = "<group>"; };
+		08D6F07025174595007198C0 /* JsonDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JsonDecoder+Extension.swift"; sourceTree = "<group>"; };
+		08D6F07425174966007198C0 /* Looger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Looger.swift; sourceTree = "<group>"; };
 		9BDE8C612E944B0AA7F6CACA /* Pods-MoonSplash_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonSplash_iOS.debug.xcconfig"; path = "Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CB05E15EC164F8D8289D76CF /* Pods-MoonSplash_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonSplash_iOS.release.xcconfig"; path = "Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CDFDA8884D33EC9AABBDF312 /* Pods_MoonSplash_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonSplash_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +135,7 @@
 		08D6EFD525171821007198C0 /* MoonSplash_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				08D6F06F2517457F007198C0 /* Utils */,
 				08D6EFE8251718D5007198C0 /* Presentation */,
 				08D6EFE7251718CE007198C0 /* Domain */,
 				08D6EFE6251718C7007198C0 /* Data */,
@@ -150,6 +159,8 @@
 		08D6EFE6251718C7007198C0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				08D6F067251744F3007198C0 /* Api */,
+				08D6F060251744BC007198C0 /* Scene */,
 				08D6EFE9251718E2007198C0 /* Entity */,
 			);
 			path = Data;
@@ -158,6 +169,7 @@
 		08D6EFE7251718CE007198C0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				08D6F061251744C3007198C0 /* Scene */,
 				08D6EFEA251718EE007198C0 /* Entity */,
 			);
 			path = Domain;
@@ -166,6 +178,7 @@
 		08D6EFE8251718D5007198C0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				08D6F062251744C7007198C0 /* Scene */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -218,6 +231,69 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		08D6F060251744BC007198C0 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				08D6F063251744D0007198C0 /* Photos */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		08D6F061251744C3007198C0 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				08D6F064251744D6007198C0 /* Photos */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		08D6F062251744C7007198C0 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				08D6F065251744DB007198C0 /* Photos */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		08D6F063251744D0007198C0 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		08D6F064251744D6007198C0 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		08D6F065251744DB007198C0 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		08D6F067251744F3007198C0 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				08D6F06825174508007198C0 /* ApiManager.swift */,
+				08D6F06C25174516007198C0 /* ApiTask.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		08D6F06F2517457F007198C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				08D6F07025174595007198C0 /* JsonDecoder+Extension.swift */,
+				08D6F07425174966007198C0 /* Looger.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		606444F252079A2950706C93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +308,6 @@
 				9BDE8C612E944B0AA7F6CACA /* Pods-MoonSplash_iOS.debug.xcconfig */,
 				CB05E15EC164F8D8289D76CF /* Pods-MoonSplash_iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -367,12 +442,14 @@
 				08D6EFF1251719B7007198C0 /* PositionItem.swift in Sources */,
 				08D6F017251720D5007198C0 /* CoverPhotoItem.swift in Sources */,
 				08D6F02325173744007198C0 /* Tags.swift in Sources */,
+				08D6F06925174508007198C0 /* ApiManager.swift in Sources */,
 				08D6F04A25173B4F007198C0 /* CoverPhoto.swift in Sources */,
 				08D6EFFD25171C4F007198C0 /* ProfileImageItem.swift in Sources */,
 				08D6EFD925171821007198C0 /* ContentView.swift in Sources */,
 				08D6EFD725171821007198C0 /* MoonSplash_iOSApp.swift in Sources */,
 				08D6F00925171FB6007198C0 /* LikesItem.swift in Sources */,
 				08D6F01A25172146007198C0 /* StatisticsItem.swift in Sources */,
+				08D6F07125174595007198C0 /* JsonDecoder+Extension.swift in Sources */,
 				08D6F0262517376B007198C0 /* Position.swift in Sources */,
 				08D6F02925173791007198C0 /* Urls.swift in Sources */,
 				08D6F01D2517218D007198C0 /* ViewsItem.swift in Sources */,
@@ -383,8 +460,10 @@
 				08D6EFF425171AA4007198C0 /* UrlsItem.swift in Sources */,
 				08D6F01025172031007198C0 /* ExifItem.swift in Sources */,
 				08D6F00625171DCD007198C0 /* LocationItem.swift in Sources */,
+				08D6F06D25174516007198C0 /* ApiTask.swift in Sources */,
 				08D6F02C251737D0007198C0 /* Values.swift in Sources */,
 				08D6F02025172360007198C0 /* PhotoItem.swift in Sources */,
+				08D6F07525174966007198C0 /* Looger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
