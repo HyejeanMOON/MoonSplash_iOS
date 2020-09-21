@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08632F4325188F2A00A0620B /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08632F4225188F2A00A0620B /* PhotosModel.swift */; };
 		08D6EFD725171821007198C0 /* MoonSplash_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6EFD625171821007198C0 /* MoonSplash_iOSApp.swift */; };
 		08D6EFD925171821007198C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6EFD825171821007198C0 /* ContentView.swift */; };
 		08D6EFDB25171824007198C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08D6EFDA25171824007198C0 /* Assets.xcassets */; };
@@ -51,10 +52,14 @@
 		08D6F07525174966007198C0 /* Looger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F07425174966007198C0 /* Looger.swift */; };
 		08D6F08125175051007198C0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F08025175051007198C0 /* Constant.swift */; };
 		08D6F08425176BAD007198C0 /* BasicError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F08325176BAD007198C0 /* BasicError.swift */; };
+		08D6F08725177433007198C0 /* PhotosRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F08625177433007198C0 /* PhotosRemoteDataSource.swift */; };
+		08D6F08A2517744F007198C0 /* PhotosRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F0892517744F007198C0 /* PhotosRemoteDataSourceImpl.swift */; };
+		08D6F08D25177658007198C0 /* PhotosApiTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6F08C25177658007198C0 /* PhotosApiTask.swift */; };
 		65425BC08D2E773DC15A01D3 /* Pods_MoonSplash_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFDA8884D33EC9AABBDF312 /* Pods_MoonSplash_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08632F4225188F2A00A0620B /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
 		08D6EFD325171821007198C0 /* MoonSplash_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonSplash_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D6EFD625171821007198C0 /* MoonSplash_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonSplash_iOSApp.swift; sourceTree = "<group>"; };
 		08D6EFD825171821007198C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +106,9 @@
 		08D6F07425174966007198C0 /* Looger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Looger.swift; sourceTree = "<group>"; };
 		08D6F08025175051007198C0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		08D6F08325176BAD007198C0 /* BasicError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicError.swift; sourceTree = "<group>"; };
+		08D6F08625177433007198C0 /* PhotosRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosRemoteDataSource.swift; sourceTree = "<group>"; };
+		08D6F0892517744F007198C0 /* PhotosRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		08D6F08C25177658007198C0 /* PhotosApiTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosApiTask.swift; sourceTree = "<group>"; };
 		9BDE8C612E944B0AA7F6CACA /* Pods-MoonSplash_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonSplash_iOS.debug.xcconfig"; path = "Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CB05E15EC164F8D8289D76CF /* Pods-MoonSplash_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonSplash_iOS.release.xcconfig"; path = "Target Support Files/Pods-MoonSplash_iOS/Pods-MoonSplash_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CDFDA8884D33EC9AABBDF312 /* Pods_MoonSplash_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonSplash_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,6 +270,7 @@
 		08D6F063251744D0007198C0 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				08D6F0892517744F007198C0 /* PhotosRemoteDataSourceImpl.swift */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -269,6 +278,8 @@
 		08D6F064251744D6007198C0 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				08D6F08625177433007198C0 /* PhotosRemoteDataSource.swift */,
+				08632F4225188F2A00A0620B /* PhotosModel.swift */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -285,6 +296,7 @@
 			children = (
 				08D6F06825174508007198C0 /* ApiManager.swift */,
 				08D6F06C25174516007198C0 /* ApiTask.swift */,
+				08D6F08C25177658007198C0 /* PhotosApiTask.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -434,12 +446,15 @@
 				08D6F04125173AB0007198C0 /* Downloads.swift in Sources */,
 				08D6F04425173AD1007198C0 /* Exif.swift in Sources */,
 				08D6EFF725171B0B007198C0 /* ValuesItem.swift in Sources */,
+				08632F4325188F2A00A0620B /* PhotosModel.swift in Sources */,
 				08D6EFED2517190D007198C0 /* TagsItem.swift in Sources */,
+				08D6F08725177433007198C0 /* PhotosRemoteDataSource.swift in Sources */,
 				08D6F0142517207C007198C0 /* CurrentUserCollectionsItem.swift in Sources */,
 				08D6F00025171C92007198C0 /* UserItem.swift in Sources */,
 				08D6F038251738E6007198C0 /* User.swift in Sources */,
 				08D6F03B25173944007198C0 /* Location.swift in Sources */,
 				08D6F03E25173A5C007198C0 /* Likes.swift in Sources */,
+				08D6F08D25177658007198C0 /* PhotosApiTask.swift in Sources */,
 				08D6F035251738A0007198C0 /* Links.swift in Sources */,
 				08D6F02F25173813007198C0 /* Historical.swift in Sources */,
 				08D6F05325173BE6007198C0 /* Photo.swift in Sources */,
@@ -471,6 +486,7 @@
 				08D6F06D25174516007198C0 /* ApiTask.swift in Sources */,
 				08D6F02C251737D0007198C0 /* Values.swift in Sources */,
 				08D6F02025172360007198C0 /* PhotoItem.swift in Sources */,
+				08D6F08A2517744F007198C0 /* PhotosRemoteDataSourceImpl.swift in Sources */,
 				08D6F07525174966007198C0 /* Looger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

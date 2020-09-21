@@ -11,13 +11,11 @@ import Alamofire
 
 protocol ApiTask {
     
-    func rx<T: Codable>() -> Single<T>
+    func rx<T: Codable>(method: HTTPMethod) -> Single<T>
     
     func baseUrlString() -> String
     
     func responseType<T: Codable>() -> T.Type
-    
-    func urlRequest() -> URLRequest?
     
     func apiManager() -> ApiManager
     
@@ -45,15 +43,17 @@ extension ApiTask {
         })
     }
     
-    func getHttpHeadrs() -> HTTPHeaders {
+    private func getHttpHeadrs() -> HTTPHeaders {
         return [
             "Content-Type": "application/json",
             "Authorization": "Client-ID hVAykcWQEgJZ0hH24m3R-T03gk_hxUYfoU-5sGwoJZ0"
         ]
     }
     
-    func makeGetRequest(baseUrl: String, pathUrl: String) -> String {
+    private func makeGetRequest(baseUrl: String, pathUrl: String) -> String {
         return "\(baseUrl)\(pathUrl)"
     }
+    
+    
     
 }

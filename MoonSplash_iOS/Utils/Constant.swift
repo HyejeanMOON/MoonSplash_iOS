@@ -8,3 +8,5 @@
 import Foundation
 
 typealias OnError = (Error) -> Void
+
+let baseUrl: String = "https://api.unsplash.com"
