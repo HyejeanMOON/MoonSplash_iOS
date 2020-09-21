@@ -9,17 +9,17 @@ import Foundation
 
 protocol Links {
     
-    var `self`: String { get }
+    var self_item: String { get }
     
-    var html: String { get }
+    var html_item: String { get }
     
-    var download: String { get }
+    var download_item: String { get }
     
-    var download_location: String { get }
+    var download_location_item: String { get }
     
-    var photos: String { get }
+    var photos_item: String { get }
     
-    var likes: String { get }
+    var likes_item: String { get }
     
-    var portfolio: String { get }
+    var portfolio_item: String { get }
 }

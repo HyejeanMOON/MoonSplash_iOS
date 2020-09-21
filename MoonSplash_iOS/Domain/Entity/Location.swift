@@ -9,9 +9,9 @@ import Foundation
 
 protocol Location {
     
-    var city: String { get }
+    var city_item: String { get }
     
-    var country: String { get }
+    var country_item: String { get }
     
-    var position: Position { get }
+    var position_item: Position { get }
 }

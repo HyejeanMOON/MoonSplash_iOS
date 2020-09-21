@@ -9,7 +9,7 @@ import Foundation
 
 protocol Values {
     
-    var date: String { get }
+    var date_item: String { get }
     
-    var value: Int { get }
+    var value_item: Int { get }
 }

@@ -37,3 +37,34 @@ struct UserItem: Codable {
     
     let twitter_username: String
 }
+
+extension UserItem: User {
+    
+    var id_item: String { id }
+    
+    var updated_at_item: String { updated_at }
+    
+    var username_item: String { username }
+    
+    var name_item: String { name }
+    
+    var portfolio_url_item: String { portfolio_url }
+    
+    var bio_item: String { bio }
+    
+    var location_item: String { location }
+    
+    var total_likes_item: Int { total_likes }
+    
+    var total_photos_item: Int { total_photos }
+    
+    var total_collections_item: Int { total_collections }
+    
+    var links_item: LinksItem { links }
+    
+    var profile_image_item: ProfileImage{ profile_image }
+    
+    var instagram_username_item: String { instagram_username }
+    
+    var twitter_username_item: String { twitter_username }
+}

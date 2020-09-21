@@ -9,5 +9,5 @@ import Foundation
 
 protocol Tags {
     
-    var title: String { get }
+    var title_item: String { get }
 }

@@ -13,3 +13,9 @@ struct ViewsItem: Codable {
     
     let historical: HistoricalItem
 }
+
+extension ViewsItem: Views {
+    var total_item: Int { total }
+    
+    var historical_item: Historical { historical }
+}

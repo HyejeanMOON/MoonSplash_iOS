@@ -9,15 +9,15 @@ import Foundation
 
 protocol Exif {
     
-    var make: String { get }
+    var make_item: String { get }
     
-    var model: String { get }
+    var model_item: String { get }
     
-    var exposure_time: String { get }
+    var exposure_time_item: String { get }
     
-    var aperture: String { get }
+    var aperture_item: String { get }
     
-    var focal_length: String { get }
+    var focal_length_item: String { get }
     
-    var iso: Int { get }
+    var iso_item: Int { get }
 }

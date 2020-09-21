@@ -18,3 +18,13 @@ struct StatisticsItem: Codable {
     let likes: LikesItem
     
 }
+
+extension StatisticsItem: Statistics {
+    var username_item: String { username }
+    
+    var downloads_item: Downloads { downloads }
+    
+    var views_item: Views { views }
+    
+    var likes_item: Likes { likes }
+}

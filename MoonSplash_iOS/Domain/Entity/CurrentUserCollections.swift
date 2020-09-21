@@ -9,16 +9,16 @@ import Foundation
 
 protocol CurrentUserCollections {
     
-    var id: Int { get }
+    var id_item: Int { get }
     
-    var title: String { get }
+    var title_item: String { get }
     
-    var published_at: String { get }
+    var published_at_item: String { get }
     
-    var curated: Bool { get }
+    var curated_item: Bool { get }
     
-    var cover_photo: String { get }
+    var cover_photo_item: String { get }
     
-    var user: String { get }
+    var user_item: String { get }
     
 }

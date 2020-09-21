@@ -23,3 +23,20 @@ struct LinksItem: Codable {
     
     let portfolio: String
 }
+
+extension LinksItem: Links {
+    
+    var self_item: String { self.`self` }
+    
+    var html_item: String { html }
+    
+    var download_item: String { download }
+    
+    var download_location_item: String { download_location }
+    
+    var photos_item: String { photos }
+    
+    var likes_item: String { likes }
+    
+    var portfolio_item: String { portfolio }
+}

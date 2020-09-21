@@ -9,13 +9,13 @@ import Foundation
 
 protocol Historical {
     
-    var change: Int { get }
+    var change_item: Int { get }
     
-    var average: Int { get }
+    var average_item: Int { get }
     
-    var resolution: String { get }
+    var resolution_item: String { get }
     
-    var quantity: Int { get }
+    var quantity_item: Int { get }
     
-    var values: [Values] { get }
+    var values_item: [Values] { get }
 }

@@ -12,3 +12,7 @@ struct TagsItem: Codable {
     let title: String
     
 }
+
+extension TagsItem: Tags {
+    var title_item: String { title }
+}

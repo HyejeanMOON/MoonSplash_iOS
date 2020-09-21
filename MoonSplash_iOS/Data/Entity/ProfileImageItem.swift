@@ -15,3 +15,12 @@ struct ProfileImageItem: Codable {
     
     let large: String
 }
+
+extension ProfileImageItem: ProfileImage {
+    
+    var small_item: String { small }
+    
+    var medium_item: String { medium }
+    
+    var large_item: String { large }
+}

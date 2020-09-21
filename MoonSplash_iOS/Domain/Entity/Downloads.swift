@@ -9,7 +9,7 @@ import Foundation
 
 protocol Downloads {
     
-    var total: Int { get }
+    var total_item: Int { get }
     
-    var historical: Historical { get }
+    var historical_item: Historical { get }
 }

@@ -13,3 +13,9 @@ struct DownloadsItem: Codable {
     
     let historical: HistoricalItem
 }
+
+extension DownloadsItem: Downloads {
+    var total_item: Int { total }
+    
+    var historical_item: Historical { historical }
+}

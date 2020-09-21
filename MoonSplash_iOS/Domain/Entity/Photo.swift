@@ -9,37 +9,37 @@ import Foundation
 
 protocol Photo {
     
-    var id: String { get }
+    var id_item: String { get }
     
-    var created_at: String { get }
+    var created_at_item: String { get }
     
-    var updated_at: String { get }
+    var updated_at_item: String { get }
     
-    var width: Int { get }
+    var width_item: Int { get }
     
-    var height: Int { get }
+    var height_item: Int { get }
     
-    var color: String { get }
+    var color_item: String { get }
     
-    var downloads: Int { get }
+    var downloads_item: Int { get }
     
-    var likes: Int { get }
+    var likes_item: Int { get }
     
-    var liked_by_user: Bool { get }
+    var liked_by_user_item: Bool { get }
     
-    var description: String { get }
+    var description_item: String { get }
     
-    var exif: Exif { get }
+    var exif_item: Exif { get }
     
-    var links: Links { get }
+    var links_item: Links { get }
     
-    var location: Location { get }
+    var location_item: Location { get }
     
-    var tags: [Tags] { get }
+    var tags_item: [Tags] { get }
     
-    var urls: Urls { get }
+    var urls_item: Urls { get }
     
-    var user: User { get }
+    var user_item: User { get }
     
-    var current_user_collections: [CurrentUserCollections] { get }
+    var current_user_collections_item: [CurrentUserCollections] { get }
 }

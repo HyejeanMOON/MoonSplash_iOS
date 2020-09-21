@@ -9,7 +9,7 @@ import Foundation
 
 protocol Position {
     
-    var latitude: Double { get }
+    var latitude_item: Double { get }
     
-    var longitude: Double { get }
+    var longitude_item: Double { get }
 }

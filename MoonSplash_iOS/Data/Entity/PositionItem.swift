@@ -13,3 +13,10 @@ struct PositionItem: Codable {
     
     let longitude: Double
 }
+
+extension PositionItem: Position {
+    
+    var latitude_item: Double { latitude }
+    
+    var longitude_item: Double { longitude }
+}

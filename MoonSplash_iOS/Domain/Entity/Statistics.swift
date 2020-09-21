@@ -9,12 +9,12 @@ import Foundation
 
 protocol Statistics {
     
-    var username: String { get }
+    var username_item: String { get }
     
-    var downloads: Downloads { get }
+    var downloads_item: Downloads { get }
     
-    var views: Views { get }
+    var views_item: Views { get }
     
-    var likes: Likes { get }
+    var likes_item: Likes { get }
     
 }

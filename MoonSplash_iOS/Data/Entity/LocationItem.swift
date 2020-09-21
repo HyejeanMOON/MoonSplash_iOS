@@ -15,3 +15,12 @@ struct LocationItem: Codable {
     
     let position: PositionItem
 }
+
+extension LocationItem: Location {
+    
+    var city_item: String { city }
+    
+    var country_item: String { country }
+    
+    var position_item: Position { position }
+}

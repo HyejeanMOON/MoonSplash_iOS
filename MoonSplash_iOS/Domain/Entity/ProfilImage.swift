@@ -9,9 +9,9 @@ import Foundation
 
 protocol ProfileImage {
     
-    var small: String { get }
+    var small_item: String { get }
     
-    var medium: String { get }
+    var medium_item: String { get }
     
-    var large: String { get }
+    var large_item: String { get }
 }

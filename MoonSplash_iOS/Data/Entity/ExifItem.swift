@@ -21,3 +21,18 @@ struct ExifItem: Codable {
     
     let iso: Int
 }
+
+extension ExifItem: Exif {
+    
+    var make_item: String { make }
+    
+    var model_item: String { model }
+    
+    var exposure_time_item: String { exposure_time }
+    
+    var aperture_item: String { aperture }
+    
+    var focal_length_item: String { focal_length }
+    
+    var iso_item: Int { iso }
+}

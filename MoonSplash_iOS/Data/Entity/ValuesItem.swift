@@ -13,3 +13,10 @@ struct ValuesItem: Codable {
     
     let value: Int
 }
+
+extension ValuesItem: Values {
+    
+    var date_item: String { date }
+    
+    var value_item: Int { value }
+}

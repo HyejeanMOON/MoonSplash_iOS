@@ -9,21 +9,21 @@ import Foundation
 
 protocol CoverPhoto {
     
-    var id: String { get }
+    var id_item: String { get }
     
-    var width: Int { get }
+    var width_item: Int { get }
     
-    var height: Int { get }
+    var height_item: Int { get }
     
-    var color: String { get }
+    var color_item: String { get }
     
-    var likes: Int { get }
+    var likes_item: Int { get }
     
-    var liked_by_user: Bool { get }
+    var liked_by_user_item: Bool { get }
     
-    var description: String { get }
+    var description_item: String { get }
     
-    var user: User { get }
+    var user_item: User { get }
     
-    var urls: Urls { get }
+    var urls_item: Urls { get }
 }

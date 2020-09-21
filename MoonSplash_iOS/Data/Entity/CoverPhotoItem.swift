@@ -27,3 +27,23 @@ struct CoverPhotoItem: Codable {
     
     let urls: UrlsItem
 }
+
+extension CoverPhotoItem: CoverPhoto {
+    var id_item: String { id }
+    
+    var width_item: Int { width }
+    
+    var height_item: Int { height }
+    
+    var color_item: String { color }
+    
+    var likes_item: Int { likes }
+    
+    var liked_by_user_item: Bool { liked_by_user }
+    
+    var description_item: String { description }
+    
+    var user_item: User { user }
+    
+    var urls_item: Urls { urls }
+}

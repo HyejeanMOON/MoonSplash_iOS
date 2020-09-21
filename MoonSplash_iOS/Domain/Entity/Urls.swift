@@ -9,15 +9,15 @@ import Foundation
 
 protocol Urls {
     
-    var url: String { get }
+    var url_item: String { get }
     
-    var raw: String { get }
+    var raw_item: String { get }
     
-    var full: String { get }
+    var full_item: String { get }
     
-    var regular: String { get }
+    var regular_item: String { get }
     
-    var small: String { get }
+    var small_item: String { get }
     
-    var thumb: String { get }
+    var thumb_item: String { get }
 }

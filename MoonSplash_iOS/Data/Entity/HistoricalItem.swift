@@ -19,3 +19,16 @@ struct HistoricalItem: Codable {
     
     let values: [ValuesItem]
 }
+
+extension HistoricalItem: Historical {
+    
+    var change_item: Int { change }
+    
+    var average_item: Int { average }
+    
+    var resolution_item: String { resolution }
+    
+    var quantity_item: Int { quantity }
+    
+    var values_item: [Values] { values }
+}

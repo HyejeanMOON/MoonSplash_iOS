@@ -13,3 +13,10 @@ struct LikesItem: Codable {
     
     let historical: HistoricalItem
 }
+
+extension LikesItem: Likes {
+    
+    var total_item: Int { total }
+    
+    var historical_item: Historical { historical }
+}
